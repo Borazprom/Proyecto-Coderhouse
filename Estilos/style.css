@@ -12,7 +12,7 @@ header{
     /* justify-content: space-between; */
     align-items: center;
     height: 150px;
-    width: 100%;
+    width: auto;
     padding: 5px 20px;
 }
 .titulo{
@@ -34,29 +34,25 @@ header img{
     text-align: right;
     list-style: none;
     margin-left: 300px;
-    color: #ffff; 
-}
-.navbar-contenido{
-    display: flex;
-    color: aliceblue;
+    color: #ffff;
 }
 .navbar-contenido ul{
     color: azure;
 }
 /*PRINCIPAL*/
 .principal{
-    background-image: url(./imagenes/banner-estudiando-3\ \(1\).jpg);
+    background-color: antiquewhite;
     padding: 100px;
     margin-bottom: 30px;
 }
 .titulo-principal{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(63, 25, 188);
     margin-bottom: 30px;
 }
 .descripcion-principal{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(53, 35, 191);
 }
 
 
@@ -65,7 +61,10 @@ header img{
     display: flex;
     margin: 50px;
     justify-content: space-between;
-    
+}
+.flex_tea {
+    background-color: antiquewhite;
+    padding: 20px;
 }
 /*grid-template-columns:  cantidad de columnas*/
 .contenido-2{
