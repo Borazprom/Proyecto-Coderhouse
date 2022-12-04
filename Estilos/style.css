@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2? family= Nunito:wght@400;700 & display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +8,6 @@
 header{
     background-color: rgb(17, 62, 87);
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     height: 150px;
     width: auto;
@@ -30,20 +28,22 @@ header img{
     text-decoration: none;
     margin-left: 30px;
     }
-.navbar ul li {
+.navbar a{
+        color: aliceblue;
+        margin: 10px;
+}
+.navbar ul{
+    display: flex;
     text-align: right;
     list-style: none;
     margin-left: 300px;
-    color: #ffff;
 }
-.navbar-contenido ul{
-    color: azure;
-}
+
 /*PRINCIPAL*/
-.principal{
+.descripcion_principal{
     background-color: antiquewhite;
     padding: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .titulo-principal{
     text-align: center;
@@ -59,48 +59,74 @@ header img{
 /*CONTENIDO*/
 .contenido-1{
     display: flex;
-    margin: 50px;
-    justify-content: space-between;
+    justify-content: center;
+    height: 500px;
 }
 .flex_tea {
     background-color: antiquewhite;
-    padding: 20px;
+    padding: 5px;
+    margin: 30px;
 }
-/*grid-template-columns:  cantidad de columnas*/
+.imagen-tea{
+height: 200px;
+width: 400px;
+margin: 5px;
+}
+.flex_tel {
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 30px;
+}
+.imagen-tel{
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+}
+.flex_dea {
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 30px;
+}
+.imagen-dea{
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+}
 .contenido-2{
     display: flex;
     margin: 50px;
-    justify-content: space-between;
+    justify-content:center;
+    height: 500px;
 }
-.imagen-tea{
-height: 50px;
-width: auto;
-margin: 20px;
-}
-.imagen-tel{
-    height: 50px;
-    width: auto;
-    margin: 20px;
-}
-.imagen-dea{
-    height: 50px;
-    width: auto;
-    margin: 20px;
+.flex_dis{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 30px;
 }
 .imagen-dis{
-    height: 50px;
-    width: auto;
-    margin: 20px;
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+}
+.flex_tda{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 30px;
 }
 .imagen-tda{
-    height: 50px;
-    width: auto;
-    margin: 20px;
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+}
+.flex_dei{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 30px;
 }
 .imagen-dei{
-    height: 50px;
-    width: auto;
-    margin: 20px;
+    height: 200px;
+    width: 400px;
+    margin: 5px;
 }
 .titulo-tea a {
     list-style: none;
@@ -115,7 +141,7 @@ article{
 /*FOOTER*/
 footer{
     background-color: rgb(17, 62, 87);
-    height: 150px;
+    height: 100px;
     display: flex;
     width: auto;
 }
