@@ -1,65 +1,28 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:'Nunito', sans-serif;
+body{
+    background-color:rgb(209, 209, 209) ;
 }
-/*ENCABEZADO*/
-header{
-    background-color: rgb(17, 62, 87);
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: auto;
-    padding: 5px 20px;
-}
-.titulo{
-    display: flex;
-    align-items: center;
-}
-header img{
-    height: 100px;
-    width: auto;
-}
-.titulo-pagina{
-    color: rgb(254, 255, 255);
-    font-size: 50px;
-    font-family: nanito;
-    text-decoration: none;
-    margin-left: 30px;
-    }
-.navbar a{
-        color: aliceblue;
-        margin: 10px;
-}
-.navbar ul{
-    display: flex;
-    text-align: right;
-    list-style: none;
-    margin-left: 300px;
-}
-
 /*PRINCIPAL*/
-.descripcion_principal{
+.principal{
     background-color: antiquewhite;
-    padding: 100px;
+    padding: 50px;
     margin-bottom: 10px;
 }
 .titulo-principal{
     text-align: center;
-    color: rgb(63, 25, 188);
+    color: rgb(17, 62, 87);
     margin-bottom: 30px;
 }
 .descripcion-principal{
     text-align: center;
-    color: rgb(53, 35, 191);
+    color: rgb(17, 62, 87);
+    font-size: 20px;
+    margin: 0px 70px 0px 70px;
 }
-
 
 /*CONTENIDO*/
 .contenido-1{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 500px;
 }
 .flex_tea {
@@ -67,10 +30,12 @@ header img{
     padding: 5px;
     margin: 30px;
 }
-.imagen-tea{
+.flex_tea .imagen-tea{
 height: 200px;
 width: 400px;
 margin: 5px;
+display: flex;
+justify-content: center;
 }
 .flex_tel {
     background-color: antiquewhite;
@@ -94,8 +59,7 @@ margin: 5px;
 }
 .contenido-2{
     display: flex;
-    margin: 50px;
-    justify-content:center;
+    justify-content: space-evenly;
     height: 500px;
 }
 .flex_dis{
@@ -136,35 +100,4 @@ article{
     justify-content: center;
     margin-top: 50px;
     margin: 50px;
-    
-}
-/*FOOTER*/
-footer{
-    background-color: rgb(17, 62, 87);
-    height: 100px;
-    display: flex;
-    width: auto;
-}
-.contenido-footer{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    margin-left: 45%;
-    
-}
-.logo-face img{
-    height: 20px;
-    width: auto;
-    margin: 0px 30px;
-}
-.logo.inst img{
-    height: auto;
-    width: auto;
-    margin: 0px 30px;
-}
-.logo-wasapp img{
-    height: 20px;
-    width: auto;
-    margin: 0px 30px;
 }
