@@ -20,10 +20,10 @@ body{
 }
 
 /*CONTENIDO*/
-.contenido-1{
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .flex_tea {
     background-color: antiquewhite;
@@ -32,8 +32,7 @@ body{
 }
 .flex_tea .imagen-tea{
 height: 200px;
-width: 400px;
-margin: 5px;
+width: 100%;
 display: flex;
 justify-content: center;
 }
@@ -44,8 +43,7 @@ justify-content: center;
 }
 .imagen-tel{
     height: 200px;
-    width: 400px;
-    margin: 5px;
+    width: 100%;
 }
 .flex_dea {
     background-color: antiquewhite;
@@ -54,7 +52,7 @@ justify-content: center;
 }
 .imagen-dea{
     height: 200px;
-    width: 400px;
+    width: 100%;
     margin: 5px;
 }
 .contenido-2{
