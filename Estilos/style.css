@@ -1,101 +1,360 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Nunito', sans-serif;} 
 body{
-    background-color:rgb(209, 209, 209) ;
+     background-color:rgb(240, 240, 240) ; 
+} 
+/* ENCABEZADO */
+header{
+    background-color: rgb(17, 62, 87);
+    display: flex;
+    align-items:center;
+    height: 100px;
+    padding: 5px 20px;
+} 
+header img{
+    height: 70px;
+    width: auto;
+    margin: 0px 30px 0px 30px;
 }
-/*PRINCIPAL*/
+.titulo-encabezado{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: nanito;
+    text-decoration: none;
+} 
+nav{
+    max-width: 900px;
+    margin-left: 200px;
+} 
+.navbar{
+    list-style: none;
+    display: flex;
+}
+.navbar .menu{
+    display: flex;
+    margin: 10px 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+} 
+.navbar > li:hover .menu{
+    color: rgb(17, 62, 87);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: 200ms;
+} 
+.despegable{
+    background-color:rgb(17, 62, 87); ;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: auto;
+    margin-left: 150px;
+    border-radius: 10px;
+} 
+.navbar li:hover .despegable{
+    display: block;
+} *
+.despegable li:hover a{
+    color: rgb(17, 62, 87) ;
+    background-color: aliceblue ;
+    border-radius: 10px;
+    transition: 200ms;
+} 
+.despegable li a{
+    display: block;
+    padding: 10px 10px 10px 10px ;
+} 
+nav a{
+        color: aliceblue;
+} 
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* PAGINA PRINCIPAL */
 .principal{
-    background-color: antiquewhite;
+    border-color: black;
+    background-color: rgb(247, 237, 225);
     padding: 50px;
-    margin-bottom: 10px;
-}
+    margin: 0px 100px 10px 100px;
+    border-radius: 0px 0px 20px 20px;
+} 
 .titulo-principal{
+    font-size: 40px;
     text-align: center;
     color: rgb(17, 62, 87);
-    margin-bottom: 30px;
-}
+    margin: 20px 0px 30px 0px;
+} 
 .descripcion-principal{
     text-align: center;
     color: rgb(17, 62, 87);
     font-size: 20px;
     margin: 0px 70px 0px 70px;
+    margin-bottom: 30px;
+} 
+.pregunta-principal {
+    color: rgb(17, 62, 87);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
 }
-
-/*CONTENIDO*/
+/* CONTENIDO GENERAL */
 .tarjetas{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-}
-.flex_tea {
+    justify-items: center;
+    margin
+} 
+/* TARJETA TEA */
+.grid_tea {
     background-color: antiquewhite;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 350px;
+    margin-bottom: 50px;
+} 
+.imagen-tea{
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+} 
+.titulo-tea{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.p-tea{
+    color: black;
+    text-align: center;
+    margin:10px 20px 20px 20px;
+}
+.grid_tea:hover   {
+    background-color:rgb(83, 72, 237);
+    border-radius: 20px;
     padding: 5px;
-    margin: 30px;
+    margin: 5px;
+    transition: 200ms;
+    width: 360px;
 }
-.flex_tea .imagen-tea{
-height: 200px;
-width: 100%;
-display: flex;
-justify-content: center;
-}
-.flex_tel {
+/* TARJETA TEL */
+.grid_tel {
     background-color: antiquewhite;
-    padding: 5px;
-    margin: 30px;
-}
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 350px;
+    margin-bottom: 50px;
+    
+} 
 .imagen-tel{
-    height: 200px;
-    width: 100%;
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
-.flex_dea {
+.titulo-tel{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.p-tel{
+    color: black;
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+} 
+/* TARJETA DEA */
+.grid_dea {
     background-color: antiquewhite;
-    padding: 5px;
-    margin: 30px;
-}
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 350px;
+    margin-bottom: 50px;
+} 
 .imagen-dea{
-    height: 200px;
-    width: 100%;
-    margin: 5px;
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
-.contenido-2{
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
+.titulo-dea{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
 }
-.flex_dis{
+.p-dea{
+    color: black;
+    text-align: center;
+    margin:10px 20px 20px 20px;
+} 
+/* TARJETA DIS */
+.grid_dis{
     background-color: antiquewhite;
-    padding: 5px;
-    margin: 30px;
-}
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 350px;
+} 
 .imagen-dis{
-    height: 200px;
-    width: 400px;
-    margin: 5px;
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
-.flex_tda{
+.titulo-dis{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.p-dis{
+    color: black;
+    text-align: center;
+    margin:10px 20px 20px 20px;
+} 
+/* TARJETA TDA */
+.grid_tda{
     background-color: antiquewhite;
-    padding: 5px;
-    margin: 30px;
-}
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 350px;
+} 
 .imagen-tda{
-    height: 200px;
-    width: 400px;
-    margin: 5px;
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
-.flex_dei{
+.titulo-tda{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.p-tda{
+    color: black;
+    text-align: center;
+    margin:10px 20px 20px 20px;
+} 
+/* TARJETA DEI */
+.grid_dei{
     background-color: antiquewhite;
-    padding: 5px;
-    margin: 30px;
-}
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 350px;
+} 
 .imagen-dei{
-    height: 200px;
-    width: 400px;
-    margin: 5px;
+    height: 150px;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
+.titulo-dei{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.p-dei{
+    color: black;
+    text-align: center;
+    margin:10px 20px 20px 20px;
+} 
 .titulo-tea a {
-    list-style: none;
-}
+    /* list-style: none; */
+} 
 article{
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin: 50px;
+} 
+/* PAGINA TEA */
+/* PAGINA TEL */
+/* PAGINA DEA */
+/* PAGINA DIS */
+/* PAGINA TDH */
+/* PAGINA DEI */
+/* PAGINA  RECURSOS */
+
+/* PAGINA CONTACTO */
+
+.body_contacto{
+   background-image: url("../imagenes/fondo\ contacto.webp");
+   background-size: cover;
+} 
+.form{
+    background-color: antiquewhite;
+    width: 90%;
+    height: 350px;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 60px auto 60px auto;
+} 
+.form_container{
+    width: 100%;
+    display: grid;
+} 
+h2{
+    text-align: center;
+} 
+.form_input{
+    font-family: inherit;
+} 
+.form_cta{
+    font-family: inherit;
+} 
+/*video*/
+.video iframe {
+    border-radius: 5px;
+    border-color: black;
+    border-width: 20px;
+    width: 800px;
+    height: 400px;
 }
+/*FOOTER*/
+footer{
+    background-color: rgb(17, 62, 87);
+    height: 100px;
+    display: flex;
+    width: auto;
+} 
+.contenido-footer{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    justify-items: center;
+    margin-left: 45%
+    
+} 
+.logo-face img{
+    height: 20px;
+    width: auto;
+    margin: 0px 30px;
+} 
+.logo.inst img{
+    height: auto;
+    width: auto;
+    margin: 0px 30px;
+} 
+.logo-wasapp img{
+    height: 20px;
+    width: auto;
+    margin: 0px 30px;
+} 
