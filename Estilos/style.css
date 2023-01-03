@@ -110,7 +110,8 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    margin
+    margin-left: 100px;
+    margin-right: 100px;
 } 
 /* TARJETA TEA */
 .grid_tea {
@@ -137,6 +138,7 @@ main{
     color: black;
     text-align: center;
     margin:10px 20px 20px 20px;
+    text-align: justify;
 }
 .grid_tea:hover   {
     background-color:rgb(83, 72, 237);
@@ -172,6 +174,7 @@ main{
     color: black;
     text-align: center;
     margin: 10px 20px 20px 20px;
+    text-align: justify;
 } 
 /* TARJETA DEA */
 .grid_dea {
@@ -198,6 +201,7 @@ main{
     color: black;
     text-align: center;
     margin:10px 20px 20px 20px;
+    text-align: justify;
 } 
 /* TARJETA DIS */
 .grid_dis{
@@ -223,31 +227,33 @@ main{
     color: black;
     text-align: center;
     margin:10px 20px 20px 20px;
+    text-align: justify;
 } 
 /* TARJETA TDA */
-.grid_tda{
+.grid_tdah{
     background-color: antiquewhite;
     border-radius: 20px;
     margin-top: 20px;
     width: 350px;
 } 
-.imagen-tda{
+.imagen-tdah{
     height: 150px;
     width: auto;
     border-radius: 10px;
     display: block;
     margin: 10px auto;
 }
-.titulo-tda{
+.titulo-tdah{
     color: black;
     display: block;
     text-align: center;
     margin-top: 20px;
 }
-.p-tda{
+.p-tdah{
     color: black;
     text-align: center;
     margin:10px 20px 20px 20px;
+    text-align: justify;
 } 
 /* TARJETA DEI */
 .grid_dei{
@@ -273,6 +279,7 @@ main{
     color: black;
     text-align: center;
     margin:10px 20px 20px 20px;
+    text-align: justify;
 } 
 .titulo-tea a {
     /* list-style: none; */
@@ -284,6 +291,82 @@ article{
     margin: 50px;
 } 
 /* PAGINA TEA */
+.main-tea{
+}
+.banner-tea{
+    height: 300px;
+    width: 1120px;
+    margin-left: 100px;
+}
+.descripcion-tea{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.h1-tea{
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    font-size: 30px;
+}
+.parafo-pagina-tea{
+    text-align: justify;
+    margin: 0px 0px 40px 0px;
+    line-height: 25px;
+}
+.h2-tea{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+.descip-autismo{
+    margin: 0px 200px 40px 200px;
+    text-align: justify;
+    line-height: 25px;
+}
+.h3-tea{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nv1{
+    
+}
+.niveles{
+    display: grid;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+    
+}
+.p-niveles{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    line-height: 25px;
+}
+.p-nv1{
+    
+}
+.imagenes-niveles{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 120px 50px 120px;
+   
+}
+.img-1nv{
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.img-nv{
+    height: 200px; 
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.img-1nv3{
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+
 /* PAGINA TEL */
 /* PAGINA DEA */
 /* PAGINA DIS */
